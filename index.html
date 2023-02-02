@@ -1,0 +1,95 @@
+<html>
+<title>Valhalla</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body bgcolor="black">
+
+<div class="w3-container w3-center">
+<img src="Logo.png" style="width: 15%">
+</div>
+
+<div class="w3-bar w3-white">
+<button class="w3-bar-item w3-button" onclick="openWeapon('home')">Home</button>
+<button class="w3-bar-item w3-button" onclick="openWeapon('profile')">Profile</button>
+<button class="w3-bar-item w3-button" onclick="openWeapon('Story')">About Us</button>
+<div class="w3-dropdown-hover">
+    <button class="w3-button">Songs</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-2">
+            <button class="w3-bar-item w3-button" onclick="openWeapon('Zaffani')">Zaffani</button>
+            <button class="w3-bar-item w3-button" onclick="openWeapon('17')">April <sup>17th</sup></button>
+            <button class="w3-bar-item w3-button" onclick="openWeapon('Nycto')">Nyctophilia</button>       
+        </div>
+            </div>
+<button class="w3-bar-item w3-button" onclick="openWeapon('Contact')">Contact</button>
+	
+		</div>
+	</div>
+
+
+<center>
+
+<div id="home" class="w3-container w3-animate-top Weapon" style="display:block">
+<br>
+<img src="PersonilFull.jpg" style="width:50%;" >
+<p class="w3-text-white">We Are Valhalla</p>
+</div>
+
+<div id="profile" class="w3-container w3-animate-top Weapon" style="display:none">
+<h1 class="w3-text-white">My Profile</h1>
+
+<p class="w3-text-white">
+Nama :	Insan Nurokhim<br>
+NIM :	10122023<br>
+Kelas :	IF-1</p>
+</div>
+
+<div id="Story" class="w3-container w3-animate-zoom Weapon" style="display:none">
+<h1 class="w3-text-white">Our Background Story</h1>
+<img src="">
+<p class="w3-text-white">Valhalla didirikan pada tahun 2022 bulan Maret oleh tiga remaja asal bandung; Insan, Fajar, dan Arya. Awalnya mereka bertiga hanya merencanakan projek untuk pekerjaan lain, Namun secara tidak sengaja Insan dan Arya menulis lagu Zaffani yang terinspirasi dari kisah cinta Insan...</p>
+</div>
+
+<div id="Contact" class="w3-container w3-animate-zoom Weapon" style="display:none">
+
+
+<p class="w3-text-white">Instagram: @Valhallamusicid || Email: valhallarecordsid@GMail.com</p>
+</div>
+
+<div id="Zaffani" class="w3-container Animasi w3-animate-left Weapon" style="display:none">
+<h1 class="w3-text-white">Zaffani</h1>
+<img src="Artwork Valhalla Zaffani.jpg" style="width: 25%;">
+<p class="w3-text-white">
+    Zaffani Adalah single pertama dari Valhalla menceritakan tentang perselingkuhan.
+</p>
+</div>
+
+<div id="17" class="w3-container Animasi w3-animate-right Weapon" style="display:none">
+<h1 class="w3-text-white">April 17<sup>th</sup></h1>
+<img src="April 17th cover art.jpg" style="width: 25%;">
+<p class="w3-text-white">
+    April 17th Merupakan single kedua yang telah dirilis oleh Valhalla pada tanggal 25 November 2022
+</p>
+</div>
+
+<div id="Nycto" class="w3-container Animasi w3-animate-bottom Weapon" style="display:none">
+<h1 class="w3-text-white">Nyctophilia</h1>
+<img src="Nycto.jpg" style="width: 25%;">
+<p class="w3-text-white">
+    Nyctophilia adalah lagu ketiga dan lagu terakhir yang Valhalla rilis di tahun 2022
+</div>
+
+
+
+<script>
+function openWeapon(namaWeapon) {
+var i;
+var x = document.getElementsByClassName("Weapon");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+document.getElementById(namaWeapon).style.display = "block";
+}
+</script>
+
+</body>
+</html>
